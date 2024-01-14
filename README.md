@@ -3,16 +3,16 @@
 </h1>
 
 <p align="center">
-  <img alt="Last commit on GitHub" src="https://img.shields.io/github/last-commit/OtavioBernardes/crawler-bpsaude?color=7D40E7">
-  <img alt="Made by Rocketseat" src="https://img.shields.io/badge/made%20by-OtavioBernardes-%20?color=7D40E7">
-  <img alt="Project top programing language" src="https://img.shields.io/github/languages/top/OtavioBernardes/crawler-bpsaude?color=7D40E7">
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/OtavioBernardes/crawler-bpsaude?color=7D40E7">
+  <img alt="Last commit on GitHub" src="https://img.shields.io/github/last-commit/otaviobernardes01/crawler-govplan?color=7D40E7">
+  <img alt="Made by Rocketseat" src="https://img.shields.io/badge/made%20by-otaviobernardes01-%20?color=7D40E7">
+  <img alt="Project top programing language" src="https://img.shields.io/github/languages/top/otaviobernardes01/crawler-govplan?color=7D40E7">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/otaviobernardes01/crawler-govplan?color=7D40E7">
 </p>
 
 <p align="center">
   <a href="#question-about">About</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#gear-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#rocket-getting-started">How to test</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#rocket-getting-started">How to test</a>&nbsp;&nbsp;&nbsp;
 </p>
 
 # Sugestão de arquitetura:
