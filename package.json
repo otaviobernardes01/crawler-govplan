@@ -4,13 +4,16 @@
   "description": "A web crawler designed to locate plans within GovPlan.",
   "author": "otaviobernardes",
   "scripts": {
+    "build": "tsc",
     "start": "tsc && node --env-file=.env dist/index.js",
-    "test": "jest --bail --forceExit"
+    "test": "jest --testPathIgnorePatterns manual.test.ts --bail --forceExit",
+    "test:manual": "jest --testPathIgnorePatterns index.test.ts --bail --forceExit"
+
   },
   "keywords": [],
   "license": "ISC",
   "devDependencies": {
-    "@types/axios": "^0.14.0",
+    "@types/axios": "^0.14.0",  
     "@types/cheerio": "^0.22.35",
     "@types/jest": "^29.5.11",
     "@types/node": "^20.11.0",

@@ -61,14 +61,16 @@ Ao seguir esse processo, a implantação da infraestrutura seria automatizada, r
 
 ## :rocket: How to test
 
-1. Clone esse repositorio: `git clone https://github.com/OtavioBernardes/crawler-bpsaude`
-2. Instale as dependencias: `npm ci`
-3. Altere o nome do `.sample.env` para `.env`
-4. Inicialize o banco de dados `docker compose -f development/docker-compose.yml up`
-4. Rode os casos de testes: `npm run test`
+1. Clone esse repositorio: `git clone https://github.com/OtavioBernardes/crawler-bpsaude`.
+2. Instale as dependencias: `npm ci`.
+3. Altere o nome do `.sample.env` para `.env`.
+4. Inicialize o banco de dados `docker compose -f development/docker-compose.yml up`.
+4. Rode os casos de testes: `npm run test`.
+5. Acesse `http://localhost:8080` para visualizar as informações no banco de dados. Senha: `fakepassword`
 
 
-Caso deseje buscar os planos de um cliente especifico:
-
-
-Observação: Se desejar buscar os planos de um cliente específico, altere o parâmetro clientName em um dos testes.
+### Caso deseje buscar os planos de um cliente especifico em tempo real, siga os passos abaixo, pois os testes do arquivo `index.test.ts` estão mockados:
+1. Siga ate o 4° passo citado acima.
+2. Altere o clienteName no arquivo `test/manual.test.ts`.
+3. Rode o teste manual com o comando `npm run test:manual`.
+4. Acesse `http://localhost:8080` para visualizar as informações no banco de dados.
