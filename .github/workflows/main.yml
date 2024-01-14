@@ -1,0 +1,21 @@
+name: Node.js CI
+
+on: [push]
+
+jobs:
+  tests:
+    timeout-minutes: 10
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [20.9]
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Run tests
+        run: cp .sample.env .env && docker-compose -f development/docker-compose.yml up -d && sleep 20 && npm ci && npm run test
