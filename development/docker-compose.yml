@@ -1,0 +1,26 @@
+version: '3.7'
+
+services:
+
+  database:
+    image: mysql:5.7
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=fakepassword
+      - MYSQL_DATABASE=crawler
+    ports:
+      - 3306:3306
+    command: --init-file /data/application/database-init.sql       
+    volumes:
+      - ../development/database-init.sql:/data/application/database-init.sql
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    restart: always
+    environment:
+      - PMA_HOST=database
+      - PMA_PORT=3306
+    ports:
+      - 8080:80
+    depends_on:
+      - database
